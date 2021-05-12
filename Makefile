@@ -4,8 +4,7 @@ format:
 check-format:
 	lein cljfmt check
 
-checks:
-	check-format check-kondo
+checks: check-format check-kondo
 
 check-kondo:
 	clj-kondo --lint src
