@@ -1,7 +1,7 @@
 name: Run tests and linters
 
 on:
-  pull_request:
+  push:
     branches: [ master ]
 
 jobs:
