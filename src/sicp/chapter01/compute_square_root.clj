@@ -1,10 +1,7 @@
-(ns sicp.chapter01.compute-square-root)
+(ns sicp.chapter01.compute-square-root
+  (:require [sicp.helpers :refer [square]]))
 
 ; From 1.1.17
-(defn square
-  [x]
-  (* x x))
-
 (defn average
   [x y]
   (/ (+ x y) 2))
