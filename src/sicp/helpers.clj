@@ -1,4 +1,5 @@
 (ns sicp.helpers)
 
-(defn square [x]
+(defn square
+  [x]
   (* x x))

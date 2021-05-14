@@ -1,6 +1,6 @@
-(ns sicp.chapter01.1_04_test
+(ns sicp.chapter01.1-04-test
   (:require [clojure.test :refer [deftest is]]
-            [sicp.chapter01.1_04 :refer [a-plus-abs-b]]))
+            [sicp.chapter01.1-04 :refer [a-plus-abs-b]]))
 
 (deftest test-asserts
   (is (= 7 (a-plus-abs-b 3 4)))

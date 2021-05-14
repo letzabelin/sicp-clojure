@@ -1,4 +1,4 @@
-(ns sicp.chapter01.1_02)
+(ns sicp.chapter01.1-02)
 
 (def solution
   (/
