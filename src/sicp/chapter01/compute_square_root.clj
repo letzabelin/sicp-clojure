@@ -36,3 +36,16 @@
     (if (good-enough? guess root)
       guess
       (recur (improve guess root)))))
+
+(defn better-good-enough?
+  [prev-guess current-guess]
+  (< (Math/abs (- prev-guess
+                  current-guess))
+     0.000001))
+
+(defn better-sqrt
+  [root]
+  (loop [prev-guess 0.0 guess 1.0]
+    (if (better-good-enough? prev-guess guess)
+      guess
+      (recur guess (improve guess root)))))
