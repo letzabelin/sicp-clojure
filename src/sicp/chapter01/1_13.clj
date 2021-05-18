@@ -9,12 +9,12 @@
              (dec count)))))
 
 (defn f [n]
-  (let [five-sqrt (Math/sqrt 5.0)]
+  (let [sqrt-of-five (Math/sqrt 5.0)]
     (/ (-
-        (Math/pow (/ (+ 1 five-sqrt)
+        (Math/pow (/ (+ 1 sqrt-of-five)
                      2)
                   n)
-        (Math/pow (/ (- 1 five-sqrt)
+        (Math/pow (/ (- 1 sqrt-of-five)
                      2)
                   n))
-       five-sqrt)))
+       sqrt-of-five)))
