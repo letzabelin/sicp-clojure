@@ -3,5 +3,7 @@
             [sicp.chapter01.1-14 :refer [get-changes-count]]))
 
 (deftest test-get-changes-count
-  (is (= 292 (get-changes-count 100)))
-  (is (= 4 (get-changes-count 11))))
+  (is (= 1 (get-changes-count 0)))
+  (is (= 0 (get-changes-count -1)))
+  (is (= 4 (get-changes-count 11)))
+  (is (= 292 (get-changes-count 100))))
