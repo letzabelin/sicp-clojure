@@ -8,10 +8,10 @@
        (recursive-f (- n 3)))))
 
 (defn iterative-f [n]
-  (loop [x 2 y 1 z 0 count n]
+  (loop [a 2 b 1 c 0 count n]
     (if (zero? count)
-      z
-      (recur (+ x y z)
-             x
-             y
+      c
+      (recur (+ a b c)
+             a
+             b
              (dec count)))))
