@@ -19,7 +19,9 @@
              multiplicand)))
 
 (defn fast-mult-iterative [multiplicand factor]
-  (loop [acc 0 m multiplicand f factor]
+  (loop [acc 0
+         m multiplicand
+         f factor]
     (cond
       (zero? f) acc
       (even? f) (recur acc
